@@ -1,9 +1,26 @@
-h1 {
-    color: aqua;
+.fild{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+.bat{
+    transition: transform 0.3s ease-in;
 }
 
-p { 
-    font-size: 2em;
-    color: lawngreen;
+.fild:hover .bat {
+    transform: rotate(-70deg);
+    transform-origin: top right;
 }
 
+.ball {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 26px;
+    position: relative;
+    left: 600px;
+    transition:transform 0.8s ease-out 0.3s;
+}
+
+.fild:hover .ball {
+    transform: translate(800px, -300px) ;
+}
